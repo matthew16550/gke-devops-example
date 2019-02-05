@@ -10,12 +10,12 @@ USER appuser
 
 WORKDIR /app
 
-ADD Pipfile Pipfile.lock ./
+COPY Pipfile Pipfile.lock ./
 
 RUN pipenv install --deploy \
     && rm -rf .cache
 
-ADD app ./
+COPY app ./
 
 RUN pipenv check \
     && rm -rf .cache
