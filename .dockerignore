@@ -1,0 +1,4 @@
+**/*
+!app
+!Pipfile
+!Pipfile.lock
