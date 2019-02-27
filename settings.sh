@@ -2,7 +2,7 @@
 # NOTE: Put sensitive / local values in settings-local.sh to avoid accidentally committing them in git
 #
 
-# ID of the relevant Google Billing Account"
+# ID of the relevant Google Billing Account
 export TF_VAR_billing_account_id="you could set this in settings-local.sh"
 
 # Email address to send monitoring alerts to
