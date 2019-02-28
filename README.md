@@ -26,7 +26,7 @@ be so much simpler and more robust!
 
 1. It will probably fail with `'projects/PROJECT_ID' is not a Stackdriver workspace`, this is a [known bug](https://github.com/terraform-providers/terraform-provider-google/issues/2605).
    To work around it go [here](https://app.google.stackdriver.com/accounts) and manually add a workspace for the project
-   then run `bin/stack-create.sh` again.
+   then run `bin/stack-create-or-update.sh` again.  But first see the known issue below about `Cluster "..." has status "RECONCILING"`.
 
 1. Open the web page linked in the TF output `console_for_hello_service` and wait until it looks like some pods are serving.
    (TODO add a CLI way to do this)
